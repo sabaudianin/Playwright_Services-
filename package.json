@@ -5,7 +5,9 @@
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
-    "server": "node ./server/index.js"
+    "server": "node ./server/index.js",
+    "e2e": "playwright test --ui",
+    "testing-tool": "set TESTING_TOOL=true& playwright test --ui"
   },
   "dependencies": {
     "axios": "0.21.1",
